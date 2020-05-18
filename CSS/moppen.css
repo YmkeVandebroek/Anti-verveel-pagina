@@ -1,0 +1,62 @@
+main a{
+	background-color: white;
+	padding: 2rem;
+	font-size: 1.5rem;
+	color: black;
+}
+
+main{
+	margin: 5%;
+}
+
+#titel{
+	width: 100%;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+img{
+	width: 100%;
+	margin: 2rem 0;
+	border-radius: 1rem;
+}
+
+p{
+	font-size: 4rem;
+	text-align: center;
+	margin: 2rem 0;
+	font-family: amatic-sc, sans-serif;
+	font-weight: 700;
+}
+
+button{
+	margin: 2rem auto;
+	display: block;
+	padding: 2rem;
+	font-size: 3rem;
+	font-family: sketchnote-square, sans-serif;
+	background-color: #3b3561;
+	border: none;
+	color: #dd7373;
+	border-radius: 1rem;
+}
+
+.lach:focus{
+	background-color: blue;
+}
+
+.onzichtbaar{
+	display: none;
+	border: 1rem solid black;
+}
+
+.pinken{
+	background-color: red;
+}
+
+@media (min-width:800px) {
+	main{
+		width: 40%;
+		margin: 5vh 30%;
+	}
+}
