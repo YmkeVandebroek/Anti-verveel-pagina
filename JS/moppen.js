@@ -42,6 +42,15 @@ let mop28 = "2 vissen zwemmen in de rivier. Als het begint te regenen, zegt de e
 let mop29 = "Er was eens een patatje dat aan het wenen was. Dan komt zijn vriendje en zegt: “Waarom ben je aan het wenen ?” Waarop het patatje antwoordt: “Omdat mijn papa in de puree zit!”";
 let mop30 = "Waarom zijn Hollanders heel blij als ze een puzzel kunnen oplossen in een half jaar tijd? Omdat er op de doos staat “van 3 tot 5 jaar”.";
 
+/*Bronnen*/
+let bronvermelding = document.getElementById("bron");
+bronvermelding.classList.add("onzichtbaar");
+let bron1 = "http://mijnwebpage.weebly.com/korte-moppen.html";
+let bron2 = "https://www.lachjekrom.com/";
+let bron3 = "https://www.debestemoppen.nl/";
+let bron4 = "http://kindermoppen.be/";
+let bronGIF = "https://giphy.com/";
+
 /*De moppen waaruit gekozen kan worden*/
 let mijnMoppen = [mop1, mop2, mop3, mop4, mop5, mop6, mop7, mop8, mop9, mop10, mop11, mop12, mop13, mop14, mop15, mop16, mop17, mop18, mop19, mop20, mop21, mop22, mop23, mop24, mop25, mop26, mop27, mop28, mop29, mop30];
 
@@ -101,6 +110,8 @@ function wachten(){
   drum.classList.remove("onzichtbaar");
   visueelLachen.classList.add("onzichtbaar");
   mijnKnop.classList.add("onzichtbaar");
+  bronvermelding.classList.remove("onzichtbaar");
+  bronvermelding.innerHTML=bronGIF;
 }
 
 /*Functie voor afspelen mop na de laadfucntie*/
@@ -113,64 +124,94 @@ effecten.onended=function() {
     mijnKnop.classList.remove("onzichtbaar");
   if (mijnParagraaf.innerHTML===mop1) {
     vertellen.setAttribute("src", "audio/Moppen/mop1.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===mop2) {
     vertellen.setAttribute("src", "audio/Moppen/mop2.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===mop3) {
     vertellen.setAttribute("src", "audio/Moppen/mop3.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop4) {
     vertellen.setAttribute("src", "audio/Moppen/mop4.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop5) {
     vertellen.setAttribute("src", "audio/Moppen/mop5.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop6) {
     vertellen.setAttribute("src", "audio/Moppen/mop6.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop7) {
     vertellen.setAttribute("src", "audio/Moppen/mop7.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop8) {
     vertellen.setAttribute("src", "audio/Moppen/mop8.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop9) {
     vertellen.setAttribute("src", "audio/Moppen/mop9.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop10) {
     vertellen.setAttribute("src", "audio/Moppen/mop10.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop11) {
     vertellen.setAttribute("src", "audio/Moppen/mop11.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop12) {
     vertellen.setAttribute("src", "audio/Moppen/mop12.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop13) {
     vertellen.setAttribute("src", "audio/Moppen/mop13.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop14) {
     vertellen.setAttribute("src", "audio/Moppen/mop14.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop15) {
     vertellen.setAttribute("src", "audio/Moppen/mop15.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===mop16) {
     vertellen.setAttribute("src", "audio/Moppen/mop16.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop17) {
     vertellen.setAttribute("src", "audio/Moppen/mop17.mp3");
+    bronvermelding.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===mop18) {
     vertellen.setAttribute("src", "audio/Moppen/mop18.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop19) {
     vertellen.setAttribute("src", "audio/Moppen/mop19.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop20) {
     vertellen.setAttribute("src", "audio/Moppen/mop20.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop21) {
     vertellen.setAttribute("src", "audio/Moppen/mop21.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop22) {
     vertellen.setAttribute("src", "audio/Moppen/mop22.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop23) {
     vertellen.setAttribute("src", "audio/Moppen/mop23.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop24) {
     vertellen.setAttribute("src", "audio/Moppen/mop24.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop25) {
     vertellen.setAttribute("src", "audio/Moppen/mop25.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop26) {
     vertellen.setAttribute("src", "audio/Moppen/mop26.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop27) {
     vertellen.setAttribute("src", "audio/Moppen/mop27.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop28) {
     vertellen.setAttribute("src", "audio/Moppen/mop28.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop29) {
     vertellen.setAttribute("src", "audio/Moppen/mop29.mp3");
+    bronvermelding.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===mop30) {
     vertellen.setAttribute("src", "audio/Moppen/mop30.mp3");
+    bronvermelding.innerHTML=bron4;
   }
 }
 
@@ -178,6 +219,7 @@ effecten.onended=function() {
 vertellen.onended=function() {
   lachGeluid.play();
   visueelLachen.classList.remove("onzichtbaar");
+  bronvermelding.innerHTML=bronGIF;
 };
 
 /*Functie die ervoor zorgt dat de geluiden stoppen als op de knop "volgende mop" gedrukt wordt*/

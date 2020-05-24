@@ -23,7 +23,7 @@ img{
 p{
 	font-size: 2rem;
 	text-align: center;
-	margin: 2rem 0;
+	margin: 2rem 0 1rem 0;
 	font-family: amatic-sc, sans-serif;
 	font-weight: 700;
 }
@@ -87,6 +87,19 @@ input{
 .fout{
 	color: red;
 	text-decoration: line-through;
+}
+
+#terug{
+	background-color: #dd7373;
+	color: #3b3561;
+}
+
+h3{
+	font-size: 1rem;
+	text-align: center;
+	margin: 1rem 0;
+	font-family: amatic-sc, sans-serif;
+	font-weight: 700;
 }
 
 @media (min-width:600px) {

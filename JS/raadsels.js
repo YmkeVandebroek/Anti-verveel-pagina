@@ -74,6 +74,19 @@ let antwoord28 = "999 want met één poot houdt hij zijn neus dicht!";
 let antwoord29 = "Mission Impossible 3.";
 let antwoord30 = "Omdat er een “dooier” inzit.";
 
+/*Bronnen*/
+let bronvermelding1 = document.getElementById("bron1");
+bronvermelding1.classList.add("onzichtbaar");
+let bronvermelding2 = document.getElementById("bron2");
+bronvermelding2.classList.add("onzichtbaar");
+
+let bron1 = "http://www.1001moppen.be/";
+let bron2 = "https://www.debestemoppen.nl/";
+let bron3 = "https://www.lachjekrom.com/";
+let bron4 = "http://kindermoppen.be/";
+let bronGIF = "https://giphy.com/";
+bronvermelding2.innerHTML=bronGIF;
+
 /*De raadsels waaruit gekozen kan worden*/
 let mijnRaadsels = [raadsel1, raadsel2, raadsel3, raadsel4, raadsel5, raadsel6, raadsel7, raadsel8, raadsel9, raadsel10, raadsel11, raadsel12, raadsel13, raadsel14, raadsel15, raadsel16, raadsel17, raadsel18, raadsel19, raadsel20, raadsel21, raadsel22, raadsel23, raadsel24, raadsel25, raadsel26, raadsel27, raadsel28, raadsel29, raadsel30];
 
@@ -103,66 +116,98 @@ function kiesRaadsel(){
 function vertelRaadsel(){
   mijnKnop.classList.add("onzichtbaar");
   vertellen.play();
+  bronvermelding1.classList.remove("onzichtbaar");
+  bronvermelding2.classList.add("onzichtbaar");
   if (mijnParagraaf.innerHTML===raadsel1) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel1.mp3");
+    bronvermelding1.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===raadsel2) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel2.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel3) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel3.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel4) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel4.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel5) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel5.mp3");
+    bronvermelding1.innerHTML=bron3;
   } else if (mijnParagraaf.innerHTML===raadsel6) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel6.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel7) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel7.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel8) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel8.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel9) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel9.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel10) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel10.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel11) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel11.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel12) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel12.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel13) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel13.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel14) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel14.mp3");
+    bronvermelding1.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===raadsel15) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel15.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel16) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel16.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel17) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel17.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel18) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel18.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel19) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel19.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel20) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel20.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel21) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel21.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel22) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel22.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel23) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel23.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel24) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel24.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel25) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel25.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel26) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel26.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel27) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel27.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel28) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel28.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel29) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel29.mp3");
+    bronvermelding1.innerHTML=bron4;
   } else if (mijnParagraaf.innerHTML===raadsel30) {
     vertellen.setAttribute("src", "audio/Raadsels/raadsel30.mp3");
+    bronvermelding1.innerHTML=bron4;
   }
     antwoordGebruikerVeld.classList.add("onzichtbaar");
     antwoordGebruikerVeld.classList.remove("fout");
@@ -182,6 +227,7 @@ vertellen.onended = function() {
   klok.classList.remove("onzichtbaar");
   infoVulIn.classList.remove("onzichtbaar");
   inputGebruiker.classList.remove("onzichtbaar");
+  bronvermelding1.innerHTML=bronGIF;
 };
 
 /*Deze functie vertelt het antwoord, toont het juiste antwoord en toont het antwoord van de gebruiker*/
@@ -195,6 +241,7 @@ inputGebruiker.classList.add("onzichtbaar");
 function toonAntwoord(){
   mijnKnop2.classList.add("onzichtbaar");
   vertellen2.pause();
+  bronvermelding1.classList.add("onzichtbaar");
   if (mijnParagraaf.innerHTML===raadsel1) {
     mijnParagraaf.innerHTML=antwoord1;
     vertellen3.setAttribute("src", "audio/Raadsels/antwoord1.mp3");
@@ -480,6 +527,7 @@ let fouten = [fout1, fout2, fout3];
 
 vertellen3.onended = function() {
   mijnKnop.classList.remove("onzichtbaar");
+  bronvermelding2.classList.remove("onzichtbaar");
   let getal = willekeurigGetal(0,2);
   if (antwoordGebruikerVeld.classList.contains("juist")) {
     vertellen4.setAttribute("src", "audio/Effecten/juist.mp3");

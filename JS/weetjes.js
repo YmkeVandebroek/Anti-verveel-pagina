@@ -42,6 +42,13 @@ let weetje28 = "De langste plaatsnaam ter wereld is te vinden is Wales, hier kun
 let weetje29 = "Clownvissen beginnen hun leven als een mannetje en tijdens hun leven veranderen ze in een vrouwtje.";
 let weetje30 = "Op de planeet Jupiter regent het diamanten.";
 
+/*Bronnen*/
+let bronvermelding = document.getElementById("bron");
+bronvermelding.classList.add("onzichtbaar");
+let bron1 = "https://www.detop100.nl/leuke-weetjes/";
+let bron2 = "https://superspreekbeurt.nl/";
+let bronGIF = "https://giphy.com/";
+
 /*De weetjes waaruit gekozen kan worden*/
 let mijnWeetjes = [weetje1, weetje2, weetje3, weetje4, weetje5, weetje6, weetje7, weetje8, weetje9, weetje10, weetje11, weetje12, weetje13, weetje14, weetje15, weetje16, weetje17, weetje18, weetje19, weetje20, weetje21, weetje22, weetje23, weetje24, weetje25, weetje26, weetje27, weetje28, weetje29, weetje30];
 
@@ -63,6 +70,8 @@ function wachten(){
   mijnParagraaf.innerHTML="";
   drum.classList.remove("onzichtbaar");
   mijnKnop.classList.add("onzichtbaar");
+  bronvermelding.classList.remove("onzichtbaar");
+  bronvermelding.innerHTML=bronGIF;
 }
 
 /*Functie voor afspelen weetje na de laadfucntie*/
@@ -75,64 +84,94 @@ effecten.onended = function() {
     mijnKnop.classList.remove("onzichtbaar");
   if (mijnParagraaf.innerHTML===weetje1) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje1.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje2) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje2.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje3) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje3.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje4) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje4.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje5) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje5.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje6) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje6.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje7) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje7.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje8) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje8.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje9) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje9.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje10) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje10.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje11) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje11.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje12) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje12.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje13) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje13.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje14) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje14.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje15) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje15.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje16) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje16.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje17) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje17.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje18) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje18.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje19) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje19.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje20) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje20.mp3");
+    bronvermelding.innerHTML=bron1;
   } else if (mijnParagraaf.innerHTML===weetje21) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje21.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===weetje22) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje22.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===weetje23) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje23.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===weetje24) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje24.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===weetje25) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje25.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===weetje26) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje26.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===weetje27) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje27.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===weetje28) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje28.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===weetje29) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje29.mp3");
+    bronvermelding.innerHTML=bron2;
   } else if (mijnParagraaf.innerHTML===weetje30) {
     vertellen.setAttribute("src", "audio/Weetjes/weetje30.mp3");
+    bronvermelding.innerHTML=bron2;
   }
 }
 
